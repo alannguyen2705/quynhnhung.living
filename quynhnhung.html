@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="test.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   
+</head>
+
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+<body>
+	<div class="top-container">
+		  <h1>TOP 5 UNIVERSITY OF VIETNAM</h1>
+	</div>
+
+	<div class="header col-12" id="myHeader">
+    <div class="col-lg-12">
+      <h2 class="col-5">Menu</h2>
+      <a class="col-7" href="http://localhost/nhungquynh.living/Student/input.php"><h2>Login</h2></a>
+    </div>
+		  
+	</div>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Hanoi Polytechnic University</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Ha Noi national university</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Foreign Trade University</button>
+  <button class="tablinks" onclick="openCity(event, 'NewYork')">Diplomatic Academy</button>
+</div>
+
+
+
+<div id="London" class="tabcontent">
+  <h3>Đại Học Bách Khoa Hà Nội</h3>
+  <p>Trường Đại học Bách khoa Hà Nội là trường đại học chuyên ngành kỹ thuật đầu ngành tại Việt Nam, thành viên của Bộ Giáo dục và Đào tạo, được xếp vào nhóm đại học trọng điểm quốc gia Việt Nam. Trường cũng là thành viên của Hiệp hội các trường đại học kỹ thuật hàng đầu khu vực Châu Á - Thái Bình Dương AOTULE</p>
+  
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Đại Học Quốc Gia Hà Nội</h3>
+  <p>Đại học Quốc gia Hà Nội là một trong hai hệ thống Đại học Quốc gia của Việt Nam, được đặt dưới sự chỉ đạo trực tiếp của Chính phủ, giữ vai trò quan trọng trong hệ thống giáo dục của Việt Nam.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Đại Học Ngoại Thương</h3>
+  <p>Trường Đại học Ngoại Thương cơ sở II là cơ sở đào tạo phía Nam của danh trường Trường Đại học Ngoại thương tại Hà Nội, đại học chuyên ngành kinh tế đầu ngành tại Việt Nam, thành viên của Bộ Giáo dục và Đào tạo</p>
+</div>
+<div id="NewYork" class="tabcontent">
+  <h3>Học Viện Ngoại Giao</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+<br>
+<img class="container-fluid" src="https://gialinh.edu.vn/wp-content/uploads/2013/09/d383d2a7f18b38f50f531c6f6759cc5a.jpg" alt="">
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+			</div>
+
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+		    header.classList.add("sticky");
+		  } else {
+		    header.classList.remove("sticky");
+		  }
+		}
+		</script>
+
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+        
+<!-- Optional JavaScript; choose one of the two! -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
